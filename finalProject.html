@@ -3,39 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WEB-115 Final Project</title>
+    <link rel="stylesheet" href="finalProject.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script defer src = "projectJS.js"></script>
 </head>
 <body>
-    <h1 id = "banner">Amir Perkins<br>WEB 115<br>0006</bre></h1>
-    <h2><br>Build your meal plan</h2>
+    <h1 id = "studentInfo">Amir Perkins<br>WEB 115<br>0006</bre></h1>
+    <h2 id = "mainHeader">Build your meal plan</h2>
     <img src = "images/banner.png">
-    <form id = "genesis">
-        <label for="name"><br>Please type in your name<br></label>
+    <form id = "userInputname">
+        <label for="name" id = "testLabel">Please type in your name<br></label>
         <input type="text" id = "name"> 
-
-        <label for="email"><br>Please type in your email<br></label>
+    </form>
+    
+    <form id = "userInputemail">
+        <label for="email">Please type in your email<br></label>
         <input type="text" id = "email">
 
-        <label for="goals"><br>What is your goal for the week?<br></label>
+    </form>
+
+    <form id = "userInputgoals">
+        <label for="goals">What is your goal for the week?<br></label>
         <input type="text" id = "goals">
+    </form>
 
-        <label for="meals"><br>What will be your meals?<br></label>
-        <div id = "meals">   
-            <input type="text" id = "breakfast">
+        <h3 id = "mealQuestion">What will be your meals for the week?<br></h3>
+        <div id = "weekDayLabels">
+            <p id = "blankSpot"></p>
+            <p id = "monday" class = "weekdays">monday</p>
+            <p id = "tuesday" class = "weekdays">tuesday</p>
+            <p id = "wednesday" class = "weekdays">wednesday</p>
+            <p id = "thursday" class = "weekdays">thursday</p>
+            <p id = "friday" class = "weekdays">friday</p>
+            <p id = "saturday" class = "weekdays">saturday</p>
+            <p id = "sunday" class = "weekdays">sunday</p>
+        </div>
+        <div id = "mealLabelsAndInputs">
+            <label for="breakfast1" class = mealLabels>Breakfast</label> 
+            <label for="firstSnack1" class = mealLabels>First snack</label> 
+            <label for="lunch1" class = mealLabels>Lunch</label> 
+            <label for="secondSnack1" class = mealLabels>Second  snack</label> 
+            <label for="dinner1" class = mealLabels>Dinner</label> 
 
-            <input type="text" id = "firstSnack">
+            <input type="text" class = "mealInputs" id = "breakfast1">
+            <input type="text" class = "mealInputs" id = "firstSnack1">
+            <input type="text" class = "mealInputs" id = "lunch1">
+            <input type="text" class = "mealInputs" id = "secondSnack1">
+            <input type="text" class = "mealInputs" id = "dinner1">
 
-            <input type="text" id = "lunch">
+            <input type="text" class = "mealInputs" id = "breakfast2">
+            <input type="text" class = "mealInputs" id = "firstSnack2">
+            <input type="text" class = "mealInputs" id = "lunch2">
+            <input type="text" class = "mealInputs" id = "secondSnack2">
+            <input type="text" class = "mealInputs" id = "dinner2">
 
-            <input type="text" id = "secondSnack">
+            <input type="text" class = "mealInputs" id = "breakfast3">
+            <input type="text" class = "mealInputs" id = "firstSnack3">
+            <input type="text" class = "mealInputs" id = "lunch3">
+            <input type="text" class = "mealInputs" id = "secondSnack3">
+            <input type="text" class = "mealInputs" id = "dinner3">
 
-            <input type="text" id = "dinner">
+            <input type="text" class = "mealInputs" id = "breakfast4">
+            <input type="text" class = "mealInputs" id = "firstSnack4">
+            <input type="text" class = "mealInputs" id = "lunch4">
+            <input type="text" class = "mealInputs" id = "secondSnack4">
+            <input type="text" class = "mealInputs" id = "dinner4">
+
+            <input type="text" class = "mealInputs" id = "breakfast5">
+            <input type="text" class = "mealInputs" id = "firstSnack5">
+            <input type="text" class = "mealInputs" id = "lunch5">
+            <input type="text" class = "mealInputs" id = "secondSnack5">
+            <input type="text" class = "mealInputs" id = "dinner5">
+
+            <input type="text" class = "mealInputs" id = "breakfast6">
+            <input type="text" class = "mealInputs" id = "firstSnack6">
+            <input type="text" class = "mealInputs" id = "lunch6">
+            <input type="text" class = "mealInputs" id = "secondSnack6">
+            <input type="text" class = "mealInputs" id = "dinner6">
+
+            <input type="text" class = "mealInputs" id = "breakfast7">
+            <input type="text" class = "mealInputs" id = "firstSnack7">
+            <input type="text" class = "mealInputs" id = "lunch7">
+            <input type="text" class = "mealInputs" id = "secondSnack7">
+            <input type="text" class = "mealInputs" id = "dinner7">
+        </div>
+
+        <div id = buttons>
             <input type = "button" id = "button" value="create HTML">
             <input type="button" id = "clear" value = "clear">
-        </div>
+        </div> 
         
-    </form>
 </body>
 </html>

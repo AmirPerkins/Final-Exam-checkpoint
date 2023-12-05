@@ -1,0 +1,122 @@
+/* Amir perkins */
+
+body{
+    display: grid;
+    grid-template-columns: 340px 1460px 340px;
+    grid-auto-rows: minmax(40px, auto);
+    grid-template-areas: 
+    ". . studentInfo"
+    ". mainHeader ."
+    ". img ."
+    ". Inputname ."
+    ". Inputemail ."
+    ". Inputgoals ."
+    ". mealQuestion ."
+    "weekDayLabels mealLabelsAndInputs ."
+    ". buttons .";
+}
+
+#studentInfo{
+    opacity: .25;
+    font-size: 20px;
+    grid-area: studentInfo;
+    color: 	#CC5500;
+}
+
+#mainHeader{
+    font-size: 40px;    
+    grid-area: mainHeader;
+    position: relative;
+    left: 550px;
+}
+
+img{
+    grid-area: img;
+    left: 250px;
+}
+
+#userInputname{
+    grid-area: Inputname;
+    position: relative;
+    place-items: center;
+    left: 625px;
+    font-size: 20px;
+}
+
+#userInputemail{
+    grid-area: Inputemail;
+    position: relative;
+    left: 625px;
+    font-size: 20px;
+}
+
+
+#userInputgoals{
+    grid-area: Inputgoals;
+    position: relative;
+    left: 625px;
+    font-size: 20px;
+}
+
+#mealQuestion{
+    grid-area: mealQuestion;
+    position: relative;
+    left: 470px;
+    font-size: 30px;
+}
+
+
+#mealLabelsAndInputs{
+    grid-area: mealLabelsAndInputs;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr 1fr;
+    row-gap: 15px;
+    grid-template-areas: 
+    ". . . . ."
+    ". . . . ."
+    ". . . . ."
+    ". . . . ."
+    ". . . . ."
+    ". . . . ."
+    ". . . . ."
+    ". . . . .";
+    
+}
+#weekDayLabels{
+    grid-area: weekDayLabels;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 1fr);
+
+}
+.mealInputs{
+    padding:5%;
+}
+.weekdays{
+    text-align: center;
+    margin: 0;
+    font-size: 22px;
+}
+#buttons{
+    grid-area: buttons;
+    position: relative;
+    left: 540px;
+    top: 20px;
+}
+#button{
+    background-color: #FFA07A;
+    font-size: 30px;
+    margin: 2%;
+}
+#clear{
+    background-color: #FFA07A;
+    font-size: 30px;
+}
+.mealLabels{
+    font-size: 22px;
+    text-align: center;
+}
+* {
+    background-color:lightsteelblue ;
+}
